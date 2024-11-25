@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .diva{
+        margin:50px;
+      }
+      .div1 {
+        border: 5px solid;
+        width: 300px;
+        
+        padding: 20px;
+        text-align: center;
+        position:absolute;
+        top:150px;
+        
+      }
+
+      .div2 {
+        margin-top: -318px;
+        margin-left: 360px;
+        border: 5px solid;
+        width: 300px;
+        
+        padding: 20px;
+        text-align: center;
+        position:absolute;
+        top: 470px;
+       
+       
+      }
+
+      .p2 {
+        display: none;
+      }
+      /* .p1:hover+.p2 {
+        display: block;
+        background-color: brown;
+      } */
+      .p1:hover ~ .p2 {
+        display:block;
+        background-color: brown;
+      }
+      .p4 {
+        display: none;
+        background-color: blueviolet;
+      }
+      .p3:hover ~ .p4 {
+        display:block;
+        background-color: brown;
+      }
+      .p1 {
+        height: 20px;
+        width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .p3 {
+        height: 20px;
+        width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      img {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="diva">
+      <div class="div1">
+        <img
+          height="150"
+          width="150"
+          alt="sun"
+          src="https://tse2.mm.bing.net/th?id=OIP.9I9sE2EuM-iVtvDWNqsBRAHaEo&pid=Api&P=0&h=180"
+        />
+        <h1>Sun</h1>
+        <p class="p1">
+          Sun, star around which Earth and the other components of the solar
+          system revolve. It is the dominant body of the system, constituting
+          more than 99 percent of its entire mass. The Sun is the source of an
+          enormous amount of energy, a portion of which provides Earth with the
+          light and heat necessary to support life.
+        </p>
+
+        <p class="p2">
+          Sun, star around which Earth and the other components of the solar
+          system revolve. It is the dominant body of the system, constituting
+          more than 99 percent of its entire mass. The Sun is the source of an
+          enormous amount of energy, a portion of which provides Earth with the
+          light and heat necessary to support life.
+        </p>
+      </div>
+      <div class="div2">
+        <img
+          height="150"
+          width="150"
+          src="https://media.istockphoto.com/id/1182564329/photo/full-moon-on-a-clear-night-stock-photo.jpg?s=2048x2048&w=is&k=20&c=EcvnKNtG0MGxOtupxSa8RRyTnzK8W_xcOlXpaPvvzCA="
+          alt="sun"
+        />
+        <h1>Moon</h1>
+        <p class="p3">
+          The Moon is Earth's only natural satellite. It orbits at an average
+          distance of 384,400 km (238,900 mi), about 30 times the diameter of
+          Earth. Tidal forces between Earth and the Moon have synchronized the
+          Moon's orbital period (lunar month) with its rotation period (lunar
+          day) at 29.5 Earth days, causing the same side of the Moon to always
+          face Earth. The Moon's gravitational pull—and, to a lesser extent, the
+          Sun's—are the main drivers of Earth's tides.
+        </p>
+
+        <p class="p4">
+          The Moon is Earth's only natural satellite. It orbits at an average
+          distance of 384,400 km (238,900 mi), about 30 times the diameter of
+          Earth. Tidal forces between Earth and the Moon have synchronized the
+          Moon's orbital period (lunar month) with its rotation period (lunar
+          day) at 29.5 Earth days, causing the same side of the Moon to always
+          face Earth. The Moon's gravitational pull—and, to a lesser extent, the
+          Sun's—are the main drivers of Earth's tides.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
